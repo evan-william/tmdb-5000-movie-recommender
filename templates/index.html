@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan's Movie Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Recommendation Engine :)</h1>
+            <p>Select a movie you like, and i'll suggest what to watch next!</p>
+        </header>
+
+        <form action="/" method="POST">
+            <input list="movie-titles" id="movie-choice" name="movie" placeholder="Type or select a movie..." required>
+            <datalist id="movie-titles">
+                {% for title in movie_titles %}
+                    <option value="{{ title }}">
+                {% endfor %}
+            </datalist>
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        {% if recommendations %}
+        <div class="results">
+            <h2>Recommendations for "{{ selected_movie }}"</h2>
+            <ul>
+                {% for movie in recommendations %}
+                    <li>{{ movie }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
