@@ -1,4 +1,4 @@
-# 🎬 Movie Recommendation Engine
+# Movie Recommendation Engine
 
 A classic machine learning project for movie recommendation, now built with a clean, modern web interface using Python and Flask.
 
@@ -117,3 +117,4 @@ If you have any feedback or suggestions, feel free to open an issue or pull requ
 ---
 
 *This project is for educational purposes. Feel free to fork, modify, or use it for your own learning.*
+
