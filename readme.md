@@ -107,7 +107,7 @@ movie-recommender/
 
 ## Author
 
-**[Your Name]**  
+**Evan William**  
 Version 1.0 (2025)
 
 This project was a fantastic exercise in building a complete machine learning application from end to end. It showcases how data processing, machine learning modeling, and web development can be combined to create a practical, interactive tool.
@@ -117,4 +117,5 @@ If you have any feedback or suggestions, feel free to open an issue or pull requ
 ---
 
 *This project is for educational purposes. Feel free to fork, modify, or use it for your own learning.*
+
 
